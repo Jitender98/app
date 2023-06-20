@@ -1,0 +1,58 @@
+kids={"set":250,"shoes":300,"sleepers":200,"shorts":350,"T-Shirt":245}
+men={"shirt":400,"T-shirt":450,"formal pants":750,"Jeans":850,"Shoes":1000}
+women={"kurta":350,"Trouser":400,"sandal":500,"Tops":300,"Jeans":750}
+a={1:'kids',2:'men',3:'women'}
+print("select type")
+for i in a.values():
+    print(i)
+total=0
+f=[]
+b=input("enter type")
+if(b=="kids"):
+    print("your items with price are")
+    for j in kids.items():
+        print(j)
+    c="yes"
+    while(c=="yes"):
+        d=input("item name")
+        e=(kids[d])
+        f.append(e)
+        c=input("you want more shopping")
+    print(f)
+    g=sum(f)
+    total=(g/18)+g
+    print("your total is",total)        
+elif(b=="men"):
+    print("your items with price are")
+    for j in men.items():
+        print(j)
+    c="yes"
+    while(c=="yes"):
+        d=input("item name")
+        e=(men[d])
+        f.append(e)
+        c=input("you want more shopping")
+    print(f)
+    g=sum(f)
+    total=(g/18)+g
+    print("your total is",total)     
+elif(b=="women"):
+    print("your items with price are")
+    for j in women.items():
+        print(j)
+    c="yes"
+    while(c=="yes"):
+        d=input("item name")
+        e=(women[d])
+        f.append(e)
+        c=input("you want more shopping")
+    print(f)
+    g=sum(f)
+    total=(g/18)+g
+    print("your total is",total)     
+else:
+    print("invalid type")
+
+
+
+
